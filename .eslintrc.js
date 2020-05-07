@@ -32,6 +32,8 @@ module.exports = {
       plugins: [ '@typescript-eslint' ],
       rules: Object.assign(typescriptEslintRecommended.rules, {
         '@typescript-eslint/no-unused-vars': 'off',
+        '@typescript-eslint/interface-name-prefix': 'off',
+        '@typescript-eslint/no-explicit-any': 'off',
       })
     }
   ],
