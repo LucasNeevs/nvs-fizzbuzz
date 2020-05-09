@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
-import { Grid, Table, TableRow, TableHead, TableCell, TableBody } from '@material-ui/core';
-import { DataValues } from '../Table/ITable';
+import {
+  Grid, Table, TableRow, TableHead, TableCell, TableBody,
+} from '@material-ui/core';
+import DataValues from './ITable';
 import { IForm } from '../Form/IForm';
 import FizzBuzz from '../../Controllers/FizzBuzz';
 
@@ -48,4 +50,4 @@ export default (): React.ReactElement<HTMLElement> => {
       </Grid>
     </>
   );
-}
+};

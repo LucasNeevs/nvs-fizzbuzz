@@ -8,4 +8,4 @@ export const initialValues: IForm = {
   id: 0,
   name: '',
   valueToFizz: 0,
-}
+};

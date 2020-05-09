@@ -42,4 +42,4 @@ export default (): React.ReactElement<HTMLElement> => {
       </Grid>
     </div>
   );
-}
+};

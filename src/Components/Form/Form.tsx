@@ -3,11 +3,11 @@ import { withFormik, FormikProps } from 'formik';
 import { Grid, TextField, Button } from '@material-ui/core';
 import { IForm, initialValues } from './IForm';
 import Table from '../Table/Table';
-import { DataValues } from '../Table/ITable';
-import { Validation } from './Form.validation';
+import DataValues from '../Table/ITable';
+import Validation from './Form.validation';
 
 const MyForm = (props: FormikProps<IForm>): React.ReactElement<HTMLElement> => {
-  const {  
+  const {
     values,
     touched,
     errors,
@@ -32,7 +32,7 @@ const MyForm = (props: FormikProps<IForm>): React.ReactElement<HTMLElement> => {
             md={6}
             xs={12}
           >
-            <TextField 
+            <TextField
               id="name"
               name="name"
               label="Name"
@@ -45,7 +45,7 @@ const MyForm = (props: FormikProps<IForm>): React.ReactElement<HTMLElement> => {
               helperText={(touched.name && errors.name) && errors.name}
               onChange={handleChange}
               onBlur={handleBlur}
-              fullWidth            
+              fullWidth
             />
           </Grid>
           <Grid
@@ -53,7 +53,7 @@ const MyForm = (props: FormikProps<IForm>): React.ReactElement<HTMLElement> => {
             md={6}
             xs={12}
           >
-            <TextField 
+            <TextField
               id="valueToFizz"
               name="valueToFizz"
               label="Value To Fizz"
@@ -66,7 +66,7 @@ const MyForm = (props: FormikProps<IForm>): React.ReactElement<HTMLElement> => {
               helperText={(touched.valueToFizz && errors.valueToFizz) && errors.valueToFizz}
               onChange={handleChange}
               onBlur={handleBlur}
-              fullWidth            
+              fullWidth
             />
           </Grid>
           <Grid
@@ -104,7 +104,7 @@ const MyForm = (props: FormikProps<IForm>): React.ReactElement<HTMLElement> => {
       <Table />
     </>
   );
-}
+};
 
 export default withFormik({
   displayName: 'MyForm',
@@ -119,5 +119,5 @@ export default withFormik({
     });
     setSubmitting(false);
     resetForm();
-  }
+  },
 })(MyForm);

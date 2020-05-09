@@ -1,3 +1,5 @@
 import { IForm } from '../Form/IForm';
 
-export const DataValues: IForm[] = [];
+const DataValues: IForm[] = [];
+
+export default DataValues;

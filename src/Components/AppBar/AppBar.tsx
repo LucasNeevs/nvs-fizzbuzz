@@ -18,4 +18,4 @@ export default (): React.ReactElement<HTMLElement> => {
       </AppBar>
     </>
   );
-}
+};
